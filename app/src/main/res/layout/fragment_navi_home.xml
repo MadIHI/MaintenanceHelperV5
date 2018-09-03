@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ihi.maintenancehelperv5.Activity_Home">
+
+    <!--<Button
+        android:id="@+id/calculate_route_start_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="开始导航"
+        android:textColor="@color/app_background"
+        android:visibility="gone" />-->
+
+    <!--<fragment
+        android:id="@+id/map_navi"
+        class="com.amap.api.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/calculate_route_start_navi" />-->
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/start_navi">
+
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btn_mapchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="普通地图"
+            android:textOn="卫星地图" />
+
+        <Button
+            android:id="@+id/calculate_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="规划路线" />
+
+        <Button
+            android:id="@+id/start_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始导航" />
+    </LinearLayout>
+
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_map"
+        android:visibility="visible"
+        app:backgroundTint="@color/app_background" />-->
+
+
+</RelativeLayout>
+

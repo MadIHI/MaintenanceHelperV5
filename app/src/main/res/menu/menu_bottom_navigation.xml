@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item＿signal"
+        android:icon="@mipmap/ic_news_gray"
+        android:title="信号" />
+    <item
+        android:id="@+id/item_lib"
+        android:icon="@mipmap/ic_library_gray"
+        android:title="蓝牙" />
+
+    <item
+        android:id="@+id/item_route"
+        android:icon="@mipmap/ic_discovery_gray"
+        android:title="寻路" />
+    <item
+        android:id="@+id/item_aboat"
+        android:icon="@mipmap/ic_more_gray"
+        android:title="关于" />
+
+</menu>

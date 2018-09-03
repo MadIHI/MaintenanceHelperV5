@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="原始："
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />-->
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_Signal_Origine"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_span="2"
+                android:singleLine="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="4sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="强度："
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_Signal_Strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />-->
+            <!--<lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/LineChart_Signal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_span="2"
+                android:paddingTop="10dp" />-->
+
+            <!--<com.github.mikephil.charting.charts.LineChart-->
+            <org.ihi.maintenancehelperv5.CustomLineChart
+                android:id="@+id/LineChartMP_Signal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_span="2" />
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+
+            <ListView
+                android:id="@+id/list_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_span="2" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--<android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top" >-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="原始："
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_Signal_Origine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="... ..."
+            android:textColor="@android:color/background_dark"
+            android:textSize="4sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="强度："
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_Signal_Strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/Btn_SignalMonitor_Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_media_play"
+        app:backgroundTint="@android:color/holo_blue_dark" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />-->
+
+</RelativeLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Btn_SignalMonitor_Start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_media_play"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Btn_SignalMonitor_Stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_media_pause"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Btn_SignalMonitor_Store"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_camera"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Btn_SignalMonitor_Pics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_dialog_dialer"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </RelativeLayout>-->
+

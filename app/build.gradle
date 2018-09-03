@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        applicationId "org.ihi.maintenancehelperv5"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 100
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    /*signingConfigs {
+        //调试版的keystore
+        debug {
+            storeFile file("C:/Users/hasi/.android/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+
+        //发布版的keystore
+        release{
+            storeFile file("D:/Projects/App/MaintenanceHelperV5/key/release.keystore")
+            storePassword "hstmg2018"
+            keyAlias "jianli_release"
+            keyPassword "hstmg2018"
+        }
+
+    }*/
+}
+
+/*repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}*/
+
+dependencies {
+
+    //implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    implementation 'com.android.support:appcompat-v7:25.+'
+    implementation 'com.android.support:design:25.+'
+    implementation 'com.android.support:support-v4:25.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    implementation 'com.clj.fastble:FastBleLib:2.3.2'
+    //implementation 'com.inuker.bluetooth:library:1.4.0'
+    //implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation(name: 'AMap4.2.0', ext: 'aar')
+    //compile(name: 'AMap4.2.0', ext: 'aar')
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}

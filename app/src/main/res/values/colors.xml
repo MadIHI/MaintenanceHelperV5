@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_checked">#3F51B5</color>
+    <color name="tab_unchecked">#757575</color>
+    <color name="app_background">#012f65</color>
+    <color name="green">#228B22</color>
+    <color name="lightgreen">#00FF00</color>
+    <color name="yellowgreen">#ADFF2F</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="darkyellow">#FFD700</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="darkgray">#696969</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
